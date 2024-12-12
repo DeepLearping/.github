@@ -11,8 +11,8 @@
    - 김전일 프롬프트 작성
      
  - 형상관리자 : 홍주연
-   - 1:1 채팅
-   - 단체 채팅
+   - 1:1 채팅 기능 구현
+   - 단체 채팅 기능 구현
    - 감정 분석된 이미지 라우팅
    - 채팅 내역 기억 및 페이징 처리
    - FAST API 시작 시 각 캐릭터 정보 retriever로 서버에 로드 및 벡터 스토어 저장
@@ -21,6 +21,7 @@
  - 형상관리자 : 지동현
    - 구글/카카오 로그인
    - 단체방 생성
+   - 백엔드에서 채팅방 정보를 요청하여 화면단에 반영
    - 네비게이션 바, 채팅방 디자인
    - 리바이 프롬프트 작성
   
@@ -34,7 +35,33 @@
    - 최근 채팅한 방 정보 nav bar에 불러오기
    - 플랑크톤 프롬프트 작성
 
+
 ## ⚙️ `개발 환경`
+![skills](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![skills](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)
+![skills](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![skills](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![skills](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![skills](https://img.shields.io/badge/axios-671ddf?&style=for-the-badge&logo=axios&logoColor=white)
+![skills](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
+
+![skills](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![skills](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![skills](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+![skills](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=Spring-Security&logoColor=white)
+![skills](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white)
+![skills](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![skills](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![skills](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=white)
+
+![skills](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
+![skills](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![skills](https://img.shields.io/badge/Sourcetree-0052CC?style=for-the-badge&logo=Sourcetree&logoColor=white)
+![skills](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)
+![skills](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
+![skills](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![skills](https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white)
+![skills](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
 
 <br/><h2>📂 패키지구조</h2>
 
@@ -72,18 +99,17 @@
 
 <br/><h2>📌 주요 기능</h2>
 
-<h3>👾 회원가입 및 로그인 👾</h3>
-- 
-
+<br/><h3>👾 회원가입 및 로그인 👾</h3>
+- ~~~
 
 <br/><h3>🧚‍♀️ 1:1 채팅 🧚‍♂️</h3>
-- TODO: 각각 캐릭터마다 설명 / 음성 / 이미지
+- TODO: 각각 캐릭터마다 설명 & 음성 & 이미지 라우팅
 
 <br/><h3> 단체 채팅 </h3>
-- 
+- TODO: who to send 모델 설명
 
 <br/><h3> 밸런스 게임 </h3>
-- 
+- ~~~
 
 <br/>
 
