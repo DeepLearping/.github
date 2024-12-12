@@ -2,9 +2,10 @@
 
 ## 💻 `프로젝트 소개 & 개발 동기`
 
+
 <br/>
 
-## 🧑‍🤝‍🧑 `멤버구성 & 담당한 역할`
+## 🧑‍🤝‍🧑 `멤버구성 & 담당 역할`
 
  - 팀장: 이득규
    - TTS 음성 트레이닝
@@ -12,17 +13,17 @@
    - 김전일 프롬프트 작성
      
  - 형상관리자: 홍주연
-   - 1:1 채팅 기능 구현
-   - 단체 채팅 기능 구현
+   - 1:1 채팅 백, Fast API 기능 구현
+   - 단체 채팅 백, Fast API 기능 구현
    - 감정 분석된 이미지 라우팅
    - 채팅 내역 기억 및 페이징 처리
    - FAST API 시작 시 각 캐릭터 정보 retriever로 서버에 로드 및 벡터 스토어 저장
    - 스폰지밥/버즈 프롬프트 작성
 
  - 형상관리자: 지동현
-   - 구글/카카오 로그인
-   - 단체방 생성
-   - 백엔드에서 채팅방 정보를 요청하여 화면단에 반영
+   - 구글/카카오 oAuth 로그인
+   - 채팅방(단일/단체) 관련 프론트와 백엔드 사이 기능 연결
+   - 프론트에서 Redux-persist 로 글로벌 변수 관리
    - 네비게이션 바, 채팅방 디자인
    - 리바이 프롬프트 작성
   
@@ -46,8 +47,8 @@
 ![skills](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![skills](https://img.shields.io/badge/axios-671ddf?&style=for-the-badge&logo=axios&logoColor=white)
 ![skills](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
-
 ![skills](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+
 ![skills](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 ![skills](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 ![skills](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=Spring-Security&logoColor=white)
@@ -541,17 +542,30 @@ C:.
 <br/>
 <br/><h2>📌 주요 기능</h2>
 
-<br/><h3>👾 회원가입 및 로그인 👾</h3>
+<h3>1. 👾 회원가입 및 로그인 👾</h3>
 - ~~~
 
-<br/><h3>🧚‍♀️ 1:1 채팅 🧚‍♂️</h3>
-- TODO: 각각 캐릭터마다 설명 & 음성 & 이미지 라우팅
+<br/><h3>2. 🧚‍♀️ 캐릭터와 채팅 🧚‍♂️</h3>
+- langchain의 SQLChatMessageHistory를 사용하여 이전 채팅 내역을 기억하고 있는 채로 대화하는 채팅 기능 구현
+- FAST API 시작 시 retriever로 캐릭터 정보를 미리 서버에 로드 및 벡터 스토어에 저장 (유저가 채팅 기다리는 시간을 최소화)
+- 받아온 AI 메세지 내용의 감정을 프롬프트 이용해 분석하여 감정에 해당하는 캐릭터 별 이미지 매핑하여 보여주기
+- 팀원들의 목소리를 학습시킨 음성 TTS 기능을 이용하여 AI 캐릭터의 메세지 읽어주는 기능
+- 서버 관리 측면에서 한 번에 트래픽이 몰리는 상황을 방지하기 위해 채팅 히스토리는 접속 시 최신 메세지 10개만 가져오고 무한 스크롤 기능을 이용하여 스크롤 할 때마다 히스토리를 받아오게끔 구현
 
-<br/><h3>🧛‍♀️ 단체 채팅 🧛‍♂️</h3>
-- TODO: who to send 모델 설명
+<br/><h4>2-1. 👩‍🎤 1:1 채팅 👨‍🎤</h4>
+- 메인 페이지에서 캐릭터를 선택하면 채팅 시작 가능
+- 선택한 캐릭터와 채팅한 내역이 없으면 데이터베이스에 새로운 방 생성, 내역이 있으면 기존 방에 접속 후 데이터베이스에서 채팅 히스토리 가져오기 (조회수 반영)
+  - 선택한 캐릭터에게 질문을 보내면 AI 캐릭터와 채팅 가능
 
-<br/><h3>🕵️‍♂️ 밸런스 게임 🕵️‍♀️</h3>
-- ~~~
+<br/><h4>2-2. 🧛‍♀️ 단체 채팅 🧛‍♂️</h4>
+- 여러개의 캐릭터들을 선택하여 단체 채팅 방 생성
+- 유저가 질문을 보내면 단체방에 있는 캐릭터들 중 어떤 캐릭터가 대답하기에 적합한지 프롬프트를 통해 선정
+  - 선정된 캐릭터들의 프롬프트를 체인에 연결하여 각각의 캐릭터에게서 질문에 대한 답장 반환 <br/>
+    (같은 질문에 대해 앞서 대답한 AI 캐릭터들의 히스토리도 함께 반영하여 답장을 작성하도록 구현)
+
+<br/><h3>3. 🕵️‍♂️ 밸런스 게임 🕵️‍♀️</h3>
+- 다양한 성격을 랜덤적으로 캐릭터에게 부여하고, 부여된 성격과 캐릭터Id로 해당되는 프롬프트를 찾아 반환
+- 입력한 상황을 prompt에 넣고 유지하여 대화 흐름에 반영되도록 구현
 
 <br/>
 
