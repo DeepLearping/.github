@@ -564,6 +564,7 @@ C:.
 <br/><h3>2. 🧚‍♀️ 캐릭터와 채팅 🧚‍♂️</h3>
 - langchain의 SQLChatMessageHistory를 사용하여 이전 채팅 내역을 기억하고 있는 채로 대화하는 채팅 기능 구현
 - FAST API 시작 시 retriever로 캐릭터 정보를 미리 서버에 로드 및 벡터 스토어에 저장 (유저가 채팅 기다리는 시간을 최소화)
+    <img align="center" alt="fastapi load characters" src="../img/fastapi_load_characters.png" width="200px" />
 - 받아온 AI 메세지 내용의 감정을 프롬프트 이용해 분석하여 감정에 해당하는 캐릭터 별 이미지 매핑하여 보여주기
 - 팀원들의 목소리를 학습시킨 음성 TTS 기능을 이용하여 AI 캐릭터의 메세지 읽어주는 기능
 - 서버 관리 측면에서 한 번에 트래픽이 몰리는 상황을 방지하기 위해 채팅 히스토리는 접속 시 최신 메세지 10개만 가져오고 무한 스크롤 기능을 이용하여 스크롤 할 때마다 히스토리를 받아오게끔 구현
@@ -602,22 +603,26 @@ C:.
 
 ## 🎃 웹 스크린 구성 및 기능
 
+| **로그인 창** |  **구글 로그인**  |  **카카오 로그인** |
+| :---:|:---:|:---:|
+| <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
+
 | **캐릭터 목록** |  **캐릭터 정보 hover**  |  **조회수 별 인기캐릭터** |
 | :---:|:---:|:---:|
 | <img align="center" alt="메인페이지" src="../img/메인.PNG" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
 
 | **캐릭터 검색** |  **1:1 채팅 - 스폰지밥**  |  **1:1 채팅 - 버즈** |
 | :---:|:---:|:---:|
-| <img align="center" alt="메인페이지" src="../img/메인.PNG" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
+| <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
 
 | **1:1 채팅 - 리바이** |  **1:1 채팅 - 에스카노르 (낮)**  |  **1:1 채팅 - 에스카노르 (밤)** |
 | :---:|:---:|:---:|
 | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
 
-| **1:1 채팅 - 김전일** |  **1:1 채팅 - 플랑크톤**  |  **단체 채팅 (일반 질문)** |
+| **1:1 채팅 - 김전일** |  **1:1 채팅 - 플랑크톤**  |  **단체방 생성 윈도우** |
 | :---:|:---:|:---:|
 | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
 
-| **단체 채팅 (특정 캐릭터 지목)** |  **etc**  |  **etc** |
+| **단체 채팅 (일반 질문)** |  **단체 채팅 (특정 캐릭터 지목)**  |  **etc** |
 | :---:|:---:|:---:|
 | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
