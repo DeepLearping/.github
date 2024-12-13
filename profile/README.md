@@ -73,7 +73,6 @@
 ![skills](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 ![skills](https://img.shields.io/badge/Sourcetree-0052CC?style=for-the-badge&logo=Sourcetree&logoColor=white)
 ![skills](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)
-![skills](https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 ![skills](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![skills](https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white)
 ![skills](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white)
@@ -603,7 +602,11 @@ C:.
 
 ## 🎃 웹 스크린 구성 및 기능
 
-| **캐릭터 목록** |  **1:1 채팅 - 스폰지밥**  |  **1:1 채팅 - 버즈** |
+| **캐릭터 목록** |  **캐릭터 정보 hover**  |  **조회수 별 인기캐릭터** |
+| :---:|:---:|:---:|
+| <img align="center" alt="메인페이지" src="../img/메인.PNG" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
+
+| **캐릭터 검색** |  **1:1 채팅 - 스폰지밥**  |  **1:1 채팅 - 버즈** |
 | :---:|:---:|:---:|
 | <img align="center" alt="메인페이지" src="../img/메인.PNG" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
 
@@ -615,6 +618,6 @@ C:.
 | :---:|:---:|:---:|
 | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
 
-| **단체 채팅 (특정 캐릭터 지목)** |  **1:1 채팅 - 플랑크톤**  |  **단체 채팅 (일반 질문)** |
+| **단체 채팅 (특정 캐릭터 지목)** |  **etc**  |  **etc** |
 | :---:|:---:|:---:|
 | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
