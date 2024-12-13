@@ -606,26 +606,26 @@ C:.
 
 ## 🎃 웹 스크린 구성 및 기능
 
-| **로그인 창** |  **구글 로그인**  |  **카카오 로그인** |
+| **로그인 창** |  **캐릭터 목록**  |  **캐릭터 정보 hover** |
 | :---:|:---:|:---:|
-| <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
+| <img align="center" alt="로그인" src="../img/로그인.png" width="240px" /> | <img align="center" alt="캐릭터목록" src="../img/캐릭터목록.png" width="240px" /> | <img align="center" alt="캐릭터hover" src="../img/캐릭터hover.png" width="240px" /> |
 
-| **캐릭터 목록** |  **캐릭터 정보 hover**  |  **조회수 별 인기캐릭터** |
+| **캐릭터 검색** |  **조회수 별 인기캐릭터**  |  **1:1 채팅 - 버즈** |
 | :---:|:---:|:---:|
-| <img align="center" alt="메인페이지" src="../img/메인.PNG" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
+| <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="인기캐릭터조회수" src="../img/인기캐릭터조회수.png" width="240px" /> | <img align="center" alt="버즈" src="../img/버즈.png" width="240px" /> |
 
-| **캐릭터 검색** |  **1:1 채팅 - 스폰지밥**  |  **1:1 채팅 - 버즈** |
+| **1:1 채팅 - 스폰지밥** |  **1:1 채팅 - 에스카노르 (낮)**  |  **1:1 채팅 - 에스카노르 (밤)** |
 | :---:|:---:|:---:|
-| <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
+| <img align="center" alt="스폰지밥" src="../img/스폰지밥.png" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
 
-| **1:1 채팅 - 리바이** |  **1:1 채팅 - 에스카노르 (낮)**  |  **1:1 채팅 - 에스카노르 (밤)** |
+| **1:1 채팅 - 김전일** |  **1:1 채팅 - 플랑크톤**  |  **1:1 채팅 - 리바이** |
 | :---:|:---:|:---:|
-| <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
+| <img align="center" alt="김전일" src="../img/김전일.png" width="240px" /> | <img align="center" alt="플랑크톤" src="../img/플랑크톤.png" width="240px" /> | <img align="center" alt="리바이" src="../img/리바이.png" width="240px" /> |
 
-| **1:1 채팅 - 김전일** |  **1:1 채팅 - 플랑크톤**  |  **단체방 생성 윈도우** |
+| **단체방 생성 모달창** |  **단체 채팅 (일반 질문)**  |  **단체 채팅 (특정 캐릭터 지목)** |
 | :---:|:---:|:---:|
-| <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
+| <img align="center" alt="단체방생성모달창" src="../img/단체방생성모달창.png" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="단체방" src="../img/단체방.png" width="240px" /> |
 
-| **단체 채팅 (일반 질문)** |  **단체 채팅 (특정 캐릭터 지목)**  |  **etc** |
+| **밸런스 게임 선택** |  **밸런스 게임 상황 부여**  |  **밸런스 게임 채팅** |
 | :---:|:---:|:---:|
-| <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> | <img align="center" alt="" src="../img/" width="240px" /> |
+| <img align="center" alt="밸런스게임선택" src="../img/밸런스게임선택.png" width="240px" /> | <img align="center" alt="밸런스게임상황부여" src="../img/밸런스게임상황부여.png" width="240px" /> | <img align="center" alt="밸런스게임" src="../img/밸런스게임.png" width="240px" /> |
