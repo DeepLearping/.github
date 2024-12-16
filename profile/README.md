@@ -559,7 +559,24 @@ C:.
 <br/><h2>📌 주요 기능</h2>
 
 <h3>1. 👾 회원가입 및 로그인 👾</h3>
-- TODO: 내용 추가
+<center><구글 로그인><br>
+<img align="center" alt="로그인" src="../img/구글oauth다이어그램.png" width="320px" /><br></center>
+<br>
+
+    1. 클라이언트 서버에서 구글로 oauth 로그인 진행 -> 인가코드 반환
+
+    2. 반환받은 인가코드로 구글에 access token 요청
+      - 구글 tokenUrl에 인가코드 + 클라이언트ID + 클라이언트Secret + redirectURI를 담아서 restTemplate으로 API 요청 -> access token 반환받기
+    
+    3. access token을 통해 Google로부터 사용자 정보 요청 & 반환
+    
+    4. 사용자 정보 처리 및 회원가입
+      - 기존에 회원가입이 되었다면 구글에서 요청받은 사용자 정보로 캐톡 서버에 로그인 진행, 회원 정보가 없다면 자동으로 회원가입 진행
+
+    5. 백엔드 서버 access token 생성하여 프론트 서버로 전달 
+      - localStorage 및 redux state에 반영
+    
+    ※ 카카오 로그인 로직도 이와 동일한 구조로 구현
 
 <br/><h3>2. 🧚‍♀️ 캐릭터와 채팅 🧚‍♂️</h3>
 - langchain의 SQLChatMessageHistory를 사용하여 이전 채팅 내역을 기억하고 있는 채로 대화하는 채팅 기능 구현
